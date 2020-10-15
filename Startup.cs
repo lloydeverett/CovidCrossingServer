@@ -13,6 +13,9 @@ using Microsoft.Extensions.Logging;
 
 namespace CovidCrossingServer
 {
+    /// <summary>
+    /// Startup boilerplate for ASP.NET MVC web API.
+    /// </summary>
     public class Startup
     {
         public Startup(IConfiguration configuration)
@@ -22,6 +25,9 @@ namespace CovidCrossingServer
 
         public IConfiguration Configuration { get; }
 
+        /// <summary>
+        /// Configure services for the application. Adds leaderboard database context to the set of available services and then adds the controllers.
+        /// </summary>
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<LeaderboardContext>();

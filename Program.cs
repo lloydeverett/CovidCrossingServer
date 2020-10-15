@@ -9,6 +9,9 @@ using Microsoft.Extensions.Logging;
 
 namespace CovidCrossingServer
 {
+    /// <summary>
+    /// Contains application entrypoint. Boilerplate to run an ASP.NET core web API.
+    /// </summary>
     public class Program
     {
         public static void Main(string[] args)
